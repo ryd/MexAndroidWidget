@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- See the file "LICENSE" for the full license governing this code. -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="TextAppearance" parent="android:TextAppearance" />
+    <style name="TextAppearance.GEN_EditLabel">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme" parent="android:Theme">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="White" parent="android:Theme.Light">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="TextAppearance.Widget">                                                                                                                                                                                      
+        <item name="android:textSize">14sp</item>                                                                                                                                                                    
+        <item name="android:textColor">@android:color/white</item>                                                                                                                                                   
+    </style> 
+</resources>

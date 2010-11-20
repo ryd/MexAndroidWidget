@@ -1,0 +1,7 @@
+Attraktor Hackerspace in Hamburg have a door status everyone 
+can reques over HTTP.  This widget fetch the status and display 
+it as widget on android screens.
+
+Feedback or questions to jens at nons dot de 
+
+Distributed under GPL v2 License.

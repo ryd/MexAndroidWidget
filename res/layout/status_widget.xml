@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/widget_frame">
+
+    <TextView
+        android:id="@+id/widget_text"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:padding="10dip"
+        android:gravity="center"
+        android:text="@string/widget_text"
+        style="@style/TextAppearance.Widget" 
+        android:textSize="15dip"/>
+
+	<ImageView 
+		android:id="@+id/widget_door_status" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="37dip"
+		android:layout_marginRight="37dip"
+		android:layout_marginBottom="5dip"
+		android:src="@drawable/ic_unknown" />
+</LinearLayout>
+
