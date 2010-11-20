@@ -29,13 +29,14 @@ public class StatusWidgetProvider extends AppWidgetProvider {
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
-        if (timer == null)
+        if (timer == null) {
             timer = new Timer();
 
-        if (task == null)
-            task = new MyTime(context, appWidgetManager);
-        
-		timer.scheduleAtFixedRate(task, 1, RATE);
+            if (task == null)
+                task = new MyTime(context, appWidgetManager);
+
+            timer.scheduleAtFixedRate(task, 1, RATE);
+        }
 	}
 
 	@Override
