@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      	  package="org.attraktor.android.door"
-      	  android:versionCode="1"
-      	  android:versionName="1.0" android:installLocation="preferExternal">
-    <application 
-    		android:icon="@drawable/icon"
-    		android:label="@string/app_name" android:permission="android.permission.INTERNET">
-
-		<receiver 
-				android:name=".StatusWidgetProvider" 
-				android:label="@string/app_name">
-	   		<intent-filter>
-	      		<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-	   		</intent-filter>
-	   		<meta-data 
-	   				android:name="android.appwidget.provider"
-	                android:resource="@xml/status_widget_provider" />
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.attraktor.android.door"
+	android:versionCode="1"
+	android:versionName="1.0"
+	android:installLocation="preferExternal">
+	<application
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+		android:permission="android.permission.INTERNET">
+		<receiver
+			android:name=".StatusWidgetProvider"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action
+					android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/status_widget_provider" />
 		</receiver>
-
-    </application>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-<uses-sdk android:targetSdkVersion="8" android:minSdkVersion="3"></uses-sdk>
-</manifest> 
+	</application>
+	<uses-permission
+		android:name="android.permission.INTERNET"/>
+	<uses-sdk
+		android:targetSdkVersion="9"
+		android:minSdkVersion="8"/>
+</manifest>
